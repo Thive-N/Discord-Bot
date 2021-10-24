@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from discord_slash import SlashCommand
 import discord
 from aioconsole import ainput
 from discord.ext import commands
@@ -131,6 +132,8 @@ class Bot(commands.Bot):
 
 def main():
     bot = Bot()
+    slash = SlashCommand(bot, sync_commands=True,
+                         sync_on_cog_reload=True, override_type=True)
     bot.run()
 
 
