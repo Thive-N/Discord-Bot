@@ -1,0 +1,9 @@
+{
+    "prefix": "!",
+    "guild_db_columns": [
+        [
+            "money",
+            "int"
+        ]
+    ]
+}

@@ -10,7 +10,7 @@ from discord.ext.commands.errors import ExtensionNotFound, NoEntryPointError, Ex
 class Bot(commands.Bot):
     # default extensions
     _extensions = (
-        'template',
+
     )
 
     def __init__(self):
