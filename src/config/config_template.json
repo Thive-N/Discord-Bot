@@ -1,5 +1,6 @@
 {
     "prefix": "!",
+    "maintainers": [],
     "guild_db_columns": [
         [
             "money",

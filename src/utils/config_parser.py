@@ -3,12 +3,10 @@ import os
 import shutil
 import sqlite3
 
-
 class ConfigParser:
     """
     config parser to load most of the bot configuration
     """
-
     def __init__(self) -> None:
         self.config_file = './src/config/config.json'
         self.load_config()
@@ -20,6 +18,9 @@ class ConfigParser:
     def push_config(self) -> None:
         with open(self.config, 'w') as f:
             json.dump(self.config_file, f, indent=4, sort_keys=True)
+
+    def get_maintainers(self) -> list:
+        return self.config['maintainers']
 
     def get_prefix(self) -> str:
         return self.config['prefix']
