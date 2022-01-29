@@ -1,3 +1,0 @@
-discord.py
-aioconsole
-discord-py-slash-command
